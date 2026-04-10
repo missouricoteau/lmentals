@@ -231,11 +231,6 @@ section { padding: 5rem 0; }
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  aspect-ratio: 4/3;
-  background: var(--bark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .about-visual svg { width: 80%; height: auto; }

@@ -1,15 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lmentals index page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lmentals — Custom Wood Processing | Saskatchewan &amp; Alberta</title>
+  <meta name="description" content="lmentals provides premium cut wood planks and custom woodcutting services across southern Saskatchewan and Alberta.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to lmentals</h1>
+<!-- ══════════════════ HEADER / NAV ══════════════════ -->
+<header>
+  <nav>
+    <a class="nav-logo" href="#hero">
+      <!-- Placeholder logo: stylized tree + saw blade -->
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Circular saw blade ring -->
+        <circle cx="24" cy="24" r="21" stroke="#c8905a" stroke-width="2.5" fill="none"/>
+        <!-- Saw teeth (8 triangles around the ring) -->
+        <g fill="#c8905a">
+          <polygon points="24,2 26,8 22,8"/>
+          <polygon points="39.8,10.2 37.5,15.5 33.8,12.5"/>
+          <polygon points="46,24 40,26 40,22"/>
+          <polygon points="39.8,37.8 34.5,36 37,32"/>
+          <polygon points="24,46 22,40 26,40"/>
+          <polygon points="8.2,37.8 11,32.5 14.5,36"/>
+          <polygon points="2,24 8,22 8,26"/>
+          <polygon points="8.2,10.2 13.5,12.5 10.5,15.8"/>
+        </g>
+        <!-- Inner circle -->
+        <circle cx="24" cy="24" r="14" fill="#3b2a1a"/>
+        <!-- Stylized pine tree -->
+        <polygon points="24,10 29,20 19,20" fill="#a0522d"/>
+        <polygon points="24,15 31,27 17,27" fill="#c8905a"/>
+        <!-- Trunk -->
+        <rect x="22" y="27" width="4" height="5" rx="1" fill="#a0522d"/>
+      </svg>
+      <span class="logo-text">
+        <span class="wordmark">lmentals</span>
+        <span class="tagline">Wood Processing</span>
+      </span>
+    </a>
 
-    <p>We service southern Saskatchewan and Alberta with cut wood planks and other custom woodcutting services.  If you are interested in purchasing wood or services from us, please call 613 619-0118</p>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#orders">Orders</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Prairie-Cut Lumber,<br><em>Built to Last</em></h1>
+      <p>lmentals delivers premium cut wood planks and custom woodcutting services across southern Saskatchewan and Alberta. From small projects to large commercial orders.</p>
+      <div class="hero-btns">
+        <a href="#orders" class="btn btn-primary">Place an Order</a>
+        <a href="#about"  class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════ SERVICES STRIP ══════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🪵</div>
+        <h3>Cut Planks</h3>
+        <p>Standard and custom-dimension lumber cut to spec.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">⚙️</div>
+        <h3>Custom Milling</h3>
+        <p>Bring us your logs — we mill to your exact requirements.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📦</div>
+        <h3>Bulk Orders</h3>
+        <p>Volume pricing for contractors and commercial buyers.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🚛</div>
+        <h3>Local Delivery</h3>
+        <p>Delivery across southern SK and AB at competitive rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════ ABOUT ══════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Decorative illustration placeholder -->
+      <div class="about-visual">
+        <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" aria-label="Wood mill illustration">
+          <!-- Sky -->
+          <rect width="320" height="240" fill="#3b2a1a"/>
+          <!-- Ground -->
+          <rect y="170" width="320" height="70" fill="#2b1a0e"/>
+          <!-- Shed body -->
+          <rect x="60" y="90" width="180" height="100" fill="#6b3f1f"/>
+          <!-- Roof -->
+          <polygon points="40,90 160,30 280,90" fill="#4e2e14"/>
+          <!-- Door -->
+          <rect x="135" y="130" width="50" height="60" rx="3" fill="#2b1a0e"/>
+          <!-- Windows -->
+          <rect x="75"  y="105" width="35" height="28" rx="2" fill="#c8905a" opacity=".6"/>
+          <rect x="210" y="105" width="35" height="28" rx="2" fill="#c8905a" opacity=".6"/>
+          <!-- Log stack -->
+          <ellipse cx="50"  cy="180" rx="16" ry="8"  fill="#a0522d"/>
+          <ellipse cx="50"  cy="168" rx="16" ry="8"  fill="#c8905a"/>
+          <ellipse cx="50"  cy="156" rx="16" ry="8"  fill="#a0522d"/>
+          <!-- Plank stack -->
+          <rect x="240" y="155" width="60" height="8"  rx="2" fill="#c8905a"/>
+          <rect x="240" y="163" width="60" height="8"  rx="2" fill="#a0522d"/>
+          <rect x="240" y="171" width="60" height="8"  rx="2" fill="#c8905a"/>
+          <!-- Trees -->
+          <polygon points="290,90 300,130 280,130" fill="#4e2e14"/>
+          <polygon points="290,70 305,110 275,110" fill="#6b3f1f"/>
+          <rect x="288" y="130" width="5" height="18" fill="#3b2a1a"/>
+
+          <polygon points="20,100 30,140 10,140" fill="#4e2e14"/>
+          <polygon points="20,80 33,120 7,120"  fill="#6b3f1f"/>
+          <rect x="18" y="140" width="5" height="18" fill="#3b2a1a"/>
+          <!-- Company name on shed -->
+          <text x="160" y="120" text-anchor="middle" fill="#f2e0c8" font-family="Georgia,serif" font-size="14" opacity=".9">lmentals</text>
+        </svg>
+      </div>
+
+      <div class="about-text">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Saskatchewan Roots,<br>Prairie-Tough Quality</h2>
+        <div class="divider"></div>
+        <p>lmentals has been serving the prairies with reliable, quality-cut lumber products. We operate out of southern Saskatchewan and serve customers across Alberta, providing everything from standard framing lumber to specialty custom cuts.</p>
+        <p>Our mill operators take pride in every board that leaves the yard. Whether you're building a fence, a deck, a barn, or a commercial structure, we cut it right the first time.</p>
+        <p>Call us at <strong><a href="tel:6136190118" style="color:var(--cedar);text-decoration:none;">613 619-0118</a></strong> to discuss your project or get a quote.</p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">SK &amp; AB</div>
+            <div class="stat-lbl">Service area</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Custom</div>
+            <div class="stat-lbl">Cuts available</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Bulk</div>
+            <div class="stat-lbl">Volume pricing</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Local</div>
+            <div class="stat-lbl">Delivery service</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════ ORDERS ══════════════════ -->
+<section id="orders">
+  <div class="container">
+    <div class="orders-layout">
+
+      <div class="order-info">
+        <p class="section-label">Place an Order</p>
+        <h2 class="section-title">Get Your Lumber Order Started</h2>
+        <div class="divider"></div>
+        <p>Fill out the form with your requirements and we'll get back to you with availability and pricing. For urgent orders or large volumes, call us directly.</p>
+        <p><strong>Phone:</strong> <a href="tel:6136190118" style="color:var(--cedar);">613 619-0118</a></p>
+
+        <ul>
+          <li>Standard framing lumber (2×4, 2×6, 2×8, 2×10, 2×12)</li>
+          <li>Custom dimension milling</li>
+          <li>Rough-cut and finished surfaces</li>
+          <li>Softwood and hardwood varieties</li>
+          <li>Treated and untreated options</li>
+          <li>Volume discounts on large orders</li>
+          <li>On-site delivery across SK &amp; AB</li>
+        </ul>
+      </div>
+
+      <div class="order-form">
+        <h3>Request a Quote</h3>
+        <form id="orderForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="o-name">Full Name *</label>
+              <input type="text" id="o-name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="field">
+              <label for="o-phone">Phone Number *</label>
+              <input type="tel" id="o-phone" name="phone" placeholder="306 555-0100" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="o-email">Email Address</label>
+            <input type="email" id="o-email" name="email" placeholder="jane@example.com">
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="o-type">Wood Type *</label>
+              <select id="o-type" name="wood_type" required>
+                <option value="" disabled selected>Select type</option>
+                <option>Spruce (framing)</option>
+                <option>Pine</option>
+                <option>Fir</option>
+                <option>Cedar</option>
+                <option>Hardwood (custom)</option>
+                <option>Not sure — advise me</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="o-volume">Estimated Volume</label>
+              <select id="o-volume" name="volume">
+                <option value="" disabled selected>Select range</option>
+                <option>Small (&lt; 100 board-ft)</option>
+                <option>Medium (100–500 board-ft)</option>
+                <option>Large (500–2000 board-ft)</option>
+                <option>Commercial (2000+ board-ft)</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="o-details">Project Details / Dimensions *</label>
+            <textarea id="o-details" name="details" placeholder="Describe your project, required dimensions, surface finish, delivery location, timeline…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Submit Quote Request</button>
+          <p id="orderMsg" style="margin-top:.8rem;font-size:.88rem;color:var(--cedar);display:none;"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div>
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);margin-bottom:1.5rem;">Whether you have a question about our products, need a custom quote, or want to learn more about what we do — reach out any time.</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:6136190118">613 619-0118</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Southern Saskatchewan &amp; Alberta</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Fri: 7 am – 5 pm CST<br>Sat: 8 am – 12 pm CST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-name">Name *</label>
+              <input type="text" id="c-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="c-email">Email *</label>
+              <input type="email" id="c-email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-subject">Subject</label>
+            <input type="text" id="c-subject" name="subject" placeholder="How can we help?">
+          </div>
+          <div class="field">
+            <label for="c-message">Message *</label>
+            <textarea id="c-message" name="message" placeholder="Tell us about your inquiry…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          <p id="contactMsg" style="margin-top:.8rem;font-size:.88rem;color:var(--cedar);display:none;"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.6rem;">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="21" stroke="#c8905a" stroke-width="2.5" fill="none"/>
+            <g fill="#c8905a">
+              <polygon points="24,2 26,8 22,8"/>
+              <polygon points="39.8,10.2 37.5,15.5 33.8,12.5"/>
+              <polygon points="46,24 40,26 40,22"/>
+              <polygon points="39.8,37.8 34.5,36 37,32"/>
+              <polygon points="24,46 22,40 26,40"/>
+              <polygon points="8.2,37.8 11,32.5 14.5,36"/>
+              <polygon points="2,24 8,22 8,26"/>
+              <polygon points="8.2,10.2 13.5,12.5 10.5,15.8"/>
+            </g>
+            <circle cx="24" cy="24" r="14" fill="#3b2a1a"/>
+            <polygon points="24,10 29,20 19,20" fill="#a0522d"/>
+            <polygon points="24,15 31,27 17,27" fill="#c8905a"/>
+            <rect x="22" y="27" width="4" height="5" rx="1" fill="#a0522d"/>
+          </svg>
+          <span class="logo-text">
+            <span class="wordmark">lmentals</span>
+            <span class="tagline">Wood Processing</span>
+          </span>
+        </div>
+        <p>Premium cut lumber and custom wood processing services serving southern Saskatchewan and Alberta.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#orders">Orders</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:6136190118">613 619-0118</a></li>
+          <li><a href="#contact">Send a message</a></li>
+          <li><a href="#orders">Request a quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> lmentals. All rights reserved.</p>
+      <p>lmentals.com</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks   = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  hamburger.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') navLinks.classList.toggle('open'); });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Simple form feedback (no backend wired up yet)
+  function handleForm(formId, msgId, successText) {
+    document.getElementById(formId).addEventListener('submit', function(e) {
+      e.preventDefault();
+      const required = this.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(el => { if (!el.value.trim()) { el.style.borderColor = '#c0392b'; valid = false; } else { el.style.borderColor = ''; } });
+      const msg = document.getElementById(msgId);
+      if (valid) {
+        msg.textContent = successText;
+        msg.style.display = 'block';
+        this.reset();
+      } else {
+        msg.textContent = 'Please fill in all required fields.';
+        msg.style.color = '#c0392b';
+        msg.style.display = 'block';
+      }
+    });
+  }
+
+  handleForm('orderForm',   'orderMsg',   'Thanks! We\'ll be in touch with a quote shortly.');
+  handleForm('contactForm', 'contactMsg', 'Message sent — we\'ll get back to you soon.');
+</script>
 </body>
 </html>

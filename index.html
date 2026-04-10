@@ -218,33 +218,9 @@
             <label for="o-email">Email Address</label>
             <input type="email" id="o-email" name="email" placeholder="jane@example.com">
           </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="o-type">Wood Type *</label>
-              <select id="o-type" name="wood_type" required>
-                <option value="" disabled selected>Select type</option>
-                <option>Spruce (framing)</option>
-                <option>Pine</option>
-                <option>Fir</option>
-                <option>Cedar</option>
-                <option>Hardwood (custom)</option>
-                <option>Not sure — advise me</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="o-volume">Estimated Volume</label>
-              <select id="o-volume" name="volume">
-                <option value="" disabled selected>Select range</option>
-                <option>Small (&lt; 100 board-ft)</option>
-                <option>Medium (100–500 board-ft)</option>
-                <option>Large (500–2000 board-ft)</option>
-                <option>Commercial (2000+ board-ft)</option>
-              </select>
-            </div>
-          </div>
           <div class="field">
-            <label for="o-details">Project Details / Dimensions *</label>
-            <textarea id="o-details" name="details" placeholder="Describe your project, required dimensions, surface finish, delivery location, timeline…" required></textarea>
+            <label for="o-details">Tell Us About Your Project *</label>
+            <textarea id="o-details" name="details" placeholder="Describe what you're building and how the wood will be used (e.g. framing, decking, fencing, furniture). Let us know if you have a preferred species or finish in mind — or if you're unsure, we're happy to recommend the right wood for the job." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;">Submit Quote Request</button>
           <p id="orderMsg" style="margin-top:.8rem;font-size:.88rem;color:var(--cedar);display:none;"></p>
